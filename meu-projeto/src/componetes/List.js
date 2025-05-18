@@ -4,9 +4,9 @@ function List() {
     return (
         <>
             <h1>Minha Lista</h1>
-            <Item marca="Ferrari" />
-            <Item marca="Porsche"/>
-            <Item marca="Lamborghini"/>
+            <Item marca="Ferrari"  lancamento={2000}/>
+            <Item marca="Porsche" lancamento={1980}/>
+            <Item marca="Lamborghini" lancamento={2024}/>
         </>
     )
 }
