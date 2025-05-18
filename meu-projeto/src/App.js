@@ -1,25 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 import HelloWord from './componetes/helloword.js'
+import Salve from './componetes/salvemeunome.js'
+import Pessoa from './componetes/Pessoas.js'
 
 function App() {
-  const name = 'arthur';
-  const newname = name.toUpperCase();
 
-  function sum(a, b){
-    return a + b;
-  }
+  const nome = "maria"
 
-  const url = 'https://Via.placeholder.com/150';
-
-  
   return (
     <div className="App">
-      <h1>hello word</h1>
-      <p>Olá, {newname}</p>
-      <p>Soma: {sum(1, 2)}</p>
-      <img src={url} alt='minha imagem'/>
       <HelloWord />
+      <Salve name="Arthur"/>
+      <Salve name="lucas"/>
+      <Salve name={nome}/>
+      <Pessoa nome={nome} idade="20" profissao="programador" foto="https://via.placeholder.com/150"/>
     </div>
   );
 }
